@@ -16,6 +16,12 @@ El comando `ps` (Process Status) genera una instantánea estática de los proces
 | **`ps au`** | Muestra los procesos de todos los usuarios (`a`) en formato de usuario (`u`), pero **excluye** los procesos *daemon* (sin terminal). | `ps_au.png` |
 | **`ps -u usuario`** | Filtra y muestra solo los procesos que pertenecen al usuario especificado. | `ps_u.png` |
 
+![PS_AUX](/img/ps_aux.png)
+
+![PS_AU](/img/ps_au.png)
+
+![PS_U](/img/ps_u.png)
+
 ### 1.2. Identificación de Procesos por Consumo de CPU
 
 Este comando permite identificar rápidamente a los procesos que consumen más CPU:
