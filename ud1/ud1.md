@@ -10,11 +10,11 @@ El comando `ps` (Process Status) genera una instantánea estática de los proces
 
 ### 1.1. Sintaxis Comunes
 
-| Comando | Descripción | Fuente de Ejemplo |
+| Comando | Descripción | 
 | :--- | :--- | :--- |
-| **`ps aux`** | Muestra todos los procesos del sistema (`a`: de todos los usuarios, `x`: sin terminal) en formato orientado al usuario (`u`). Es la forma más completa de ver la actividad del sistema. | `ps_aux.png` |
-| **`ps au`** | Muestra los procesos de todos los usuarios (`a`) en formato de usuario (`u`), pero **excluye** los procesos *daemon* (sin terminal). | `ps_au.png` |
-| **`ps -u usuario`** | Filtra y muestra solo los procesos que pertenecen al usuario especificado. | `ps_u.png` |
+| **`ps aux`** | Muestra todos los procesos del sistema (`a`: de todos los usuarios, `x`: sin terminal) en formato orientado al usuario (`u`). Es la forma más completa de ver la actividad del sistema. |
+| **`ps au`** | Muestra los procesos de todos los usuarios (`a`) en formato de usuario (`u`), pero **excluye** los procesos *daemon* (sin terminal). |
+| **`ps -u usuario`** | Filtra y muestra solo los procesos que pertenecen al usuario especificado. |
 
 ![PS_AUX](img/ps_aux.png)
 
@@ -29,6 +29,10 @@ Este comando permite identificar rápidamente a los procesos que consumen más C
 ```bash
 ps -eo pid,user,%cpu,comm --sort=-%cpu | head -n 6
 ```
+
+![PS_EO](img/ps_eo.png)
+
+
 ### Explicación del Comando
 
 ```bash
@@ -58,6 +62,8 @@ Estas herramientas proporcionan una vista **interactiva y en tiempo real** del e
 
 `top` muestra un resumen dinámico del sistema (carga promedio, uso de CPU y memoria) y una lista de los procesos en tiempo real.
 
+![TOP](img/top1.png)
+
 #### Opciones de Interfaz (Dentro de `top`)
 
 | Opción | Descripción |
@@ -71,6 +77,7 @@ Estas herramientas proporcionan una vista **interactiva y en tiempo real** del e
 ```bash
 top -b -n 3 > top.info
 ```
+![TOP_B](img/top_copia3.png)
 
 **Explicación:**
 - **-b:** Ejecuta `top` en modo batch (no interactivo).  
@@ -83,6 +90,8 @@ top -b -n 3 > top.info
 
 `htop` es una alternativa **mejorada, visual e interactiva** de `top`.
 
+![HTOP](img/htop.png)
+
 **Características principales:**
 - Muestra el uso de CPU **por núcleo**.  
 - Permite la **gestión de procesos** (Kill, Nice, Filter) mediante teclas de función.  
@@ -93,6 +102,8 @@ top -b -n 3 > top.info
 ### 2.3. `atop` – El Analizador Avanzado
 
 `atop` es un monitor avanzado de rendimiento del sistema.
+
+![ATOP](img/atop_1.png)
 
 **Características destacadas:**
 - Muestra actividad a nivel de **sistema** (CPU, memoria, paginación).  
