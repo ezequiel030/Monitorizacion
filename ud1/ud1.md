@@ -11,7 +11,7 @@ El comando `ps` (Process Status) genera una instantánea estática de los proces
 ### 1.1. Sintaxis Comunes
 
 | Comando | Descripción | 
-| :--- | :--- | :--- |
+| :--- | :--- | 
 | **`ps aux`** | Muestra todos los procesos del sistema (`a`: de todos los usuarios, `x`: sin terminal) en formato orientado al usuario (`u`). Es la forma más completa de ver la actividad del sistema. |
 | **`ps au`** | Muestra los procesos de todos los usuarios (`a`) en formato de usuario (`u`), pero **excluye** los procesos *daemon* (sin terminal). |
 | **`ps -u usuario`** | Filtra y muestra solo los procesos que pertenecen al usuario especificado. |
