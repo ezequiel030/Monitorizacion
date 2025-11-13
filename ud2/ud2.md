@@ -14,6 +14,8 @@ Estos comandos permiten verificar el **estado de la RAM**, la **memoria swap** y
 
 El comando `free` muestra la cantidad total de memoria física y de intercambio (swap) libre y usada.
 
+![FREE](img/free.png)
+
 #### Comandos y Descripción
 
 | Comando | Descripción |
@@ -28,12 +30,14 @@ El comando `free` muestra la cantidad total de memoria física y de intercambio 
 
 El comando `iostat` monitorea las **estadísticas de rendimiento de I/O** de los dispositivos de almacenamiento y el **uso de la CPU**.
 
-#### Ejemplo de uso
+![IOSTAT](img/iostat.png)
+
+#### Ejemplo de uso:
 
 ```bash
 iostat -x nveme0n1
 ```
-Métricas Clave
+#### Métricas Clave
 
 - **-x** Muestra estadísticas extendidas.
 
@@ -41,11 +45,11 @@ Métricas Clave
 
 - %iowait: Porcentaje de tiempo que la CPU estuvo inactiva esperando que se completen las operaciones de I/O.
 
-Un valor alto indica un cuello de botella en el disco.
+#### Un valor alto indica un cuello de botella en el disco.
 
 - %idle: Porcentaje de tiempo que la CPU estuvo inactiva y sin esperar I/O.
 
-Un valor alto indica que la CPU está mayormente libre.
+#### Un valor alto indica que la CPU está mayormente libre.
 
 ## 2. Gestión de Espacio en Disco (df y du)
 
@@ -54,6 +58,8 @@ Estos comandos se utilizan para inspeccionar el uso de espacio en el sistema de 
 ### 2.1. df – Espacio Libre en Sistema de Archivos
 
 El comando df (disk free) reporta el uso del espacio de disco montado.
+
+![DF](img/df.png)
 
 | Comando	| Descripción	| 
 | df -h	| Muestra la información de todos los sistemas de archivos en formato legible por humanos (-h).|
@@ -64,12 +70,13 @@ El comando df (disk free) reporta el uso del espacio de disco montado.
 
 El comando du (disk usage) estima el espacio de disco utilizado por directorios.
 
-Ejemplo de uso:
+![DU](img/du_plus.png)
+#### Ejemplo de uso:
 ```bash
 sudo du -hs /home/*
 ```
 
-Explicación:
+#### Explicación:
 
 - sudo du: Ejecuta el comando con permisos elevados para asegurar acceso a todos los directorios.
 
