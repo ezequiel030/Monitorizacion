@@ -35,15 +35,15 @@ iostat -x nveme0n1
 ```
 Métricas Clave
 
--x: Muestra estadísticas extendidas.
+- **-x** Muestra estadísticas extendidas.
 
-nveme0n1: Limita el reporte a un dispositivo específico.
+- nveme0n1: Limita el reporte a un dispositivo específico.
 
-%iowait: Porcentaje de tiempo que la CPU estuvo inactiva esperando que se completen las operaciones de I/O.
+- %iowait: Porcentaje de tiempo que la CPU estuvo inactiva esperando que se completen las operaciones de I/O.
 
 Un valor alto indica un cuello de botella en el disco.
 
-%idle: Porcentaje de tiempo que la CPU estuvo inactiva y sin esperar I/O.
+- %idle: Porcentaje de tiempo que la CPU estuvo inactiva y sin esperar I/O.
 
 Un valor alto indica que la CPU está mayormente libre.
 
@@ -54,8 +54,6 @@ Estos comandos se utilizan para inspeccionar el uso de espacio en el sistema de 
 ### 2.1. df – Espacio Libre en Sistema de Archivos
 
 El comando df (disk free) reporta el uso del espacio de disco montado.
-
-Comandos y Descripción
 
 | Comando	| Descripción	| 
 | df -h	| Muestra la información de todos los sistemas de archivos en formato legible por humanos (-h).|
@@ -73,10 +71,10 @@ sudo du -hs /home/*
 
 Explicación:
 
-sudo du: Ejecuta el comando con permisos elevados para asegurar acceso a todos los directorios.
+- sudo du: Ejecuta el comando con permisos elevados para asegurar acceso a todos los directorios.
 
--h: Muestra los tamaños en formato legible por humanos.
+- **-h** Muestra los tamaños en formato legible por humanos.
 
 -s: Muestra un resumen del tamaño total para cada directorio o archivo.
 
-/home/*: Muestra el uso de disco total por cada usuario bajo /home.
+- **/home/*** Muestra el uso de disco total por cada usuario bajo /home.
