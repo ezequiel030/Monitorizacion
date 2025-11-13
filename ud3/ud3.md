@@ -65,5 +65,6 @@ sudo tcpdump
 ```
 
 ![TCPDUMP](img/tcpdump.png)
-Salida de Ejemplo: La salida de tcpdump muestra los detalles de los paquetes, incluyendo la marca de tiempo, las direcciones IP de origen y destino, el protocolo, y datos específicos como flags y detalles de DNS/dominios.
+
+#### Salida de Ejemplo: La salida de tcpdump muestra los detalles de los paquetes, incluyendo la marca de tiempo, las direcciones IP de origen y destino, el protocolo, y datos específicos como flags y detalles de DNS/dominios.
 
